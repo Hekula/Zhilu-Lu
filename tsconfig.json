@@ -1,0 +1,44 @@
+{
+    // ** 任意目录  * 任意文件
+    // 指定需要编译的ts目录
+    "include": [
+        "./src/**/*"
+    ],
+    // 指定不需要编译的ts文件
+    "exclude": [
+
+    ],
+    // 继承别的配置文件
+    // "extends"
+
+    // 需要编译的文件 需要编译的文件较少时使用
+    // "files": []
+
+
+    // 编译配置
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "System",
+        // "lib": []
+        "outDir": "./dist", // 编译后文件所在的目录
+        "outFile": "./dist/app.js", // 将代码合并为一个文件
+        "allowJs": true,
+        "checkJs": true,
+        "removeComments": true,
+        "noEmit": false, // 是否产生编译后的文件
+        "noEmitOnError": true, // 产生错误后是否还编译文件
+
+        "moduleResolution": "node",
+
+        
+        "strict": true, // 是否开启严格模式 一旦开启，以下都不需要再开启
+
+        "alwaysStrict": true,
+
+        "noImplicitAny": true, // 不允许隐式any类型
+
+        "noImplicitThis": true, // 不允许不明确类型的this
+
+        "strictNullChecks": true, // 严格不允许变量有空值的可能
+    }
+}
